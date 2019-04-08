@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.calculadora.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/visor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/visorResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="funBut"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="funBut"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="funBut"
+            android:text="3" />
+
+
+        <Button
+            android:id="@+id/bSoma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="funOpe"
+            android:text="+"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="funBut"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="funBut"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="funBut"
+            android:text="6" />
+
+
+        <Button
+            android:id="@+id/bSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="funOpe"
+            android:text="-" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="funBut"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/b8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="funBut"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/b9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="funBut"
+            android:text="9" />
+
+
+        <Button
+            android:id="@+id/bMu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="funOpe"
+            android:text="*" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:onClick="funOpe"/>
+
+        <Button
+            android:id="@+id/b0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="funBut"
+            android:text="0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+/-"
+            android:onClick="funOpe"/>
+
+        <Button
+            android:id="@+id/bDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="funOpe"
+            android:text="/" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bIgual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="funOpe"
+        android:text="=" />
+
+
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Voltar"
+    android:onClick="volt"/>
+
+
+</LinearLayout>
